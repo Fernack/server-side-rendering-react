@@ -5,11 +5,13 @@
 
   div:first-child {
     flex-grow: 1;
-    max-width: 60px;
+    // max-width: 60px;
+    flex-basis: 0;
   }
 
   .breadcrum {
     flex-grow: 11;
+    flex-basis: 0;
     font-size: 14px;
   }
 }

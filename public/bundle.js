@@ -7289,37 +7289,46 @@ var SearchBox = function (_Component) {
           },
           __self: this
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_1__Logo_ML_png___default.a, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          },
-          __self: this
-        }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "form",
-          { action: "/items", role: "search", __source: {
+          "div",
+          { className: "logoSearchContainer", __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
+            },
+            __self: this
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: __WEBPACK_IMPORTED_MODULE_1__Logo_ML_png___default.a, __source: {
               fileName: _jsxFileName,
               lineNumber: 23
             },
             __self: this
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", onChange: this.handleUserInput, value: this.state.query, name: "search", autoComplete: "off", placeholder: "Nunca dejes de buscar", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 24
-            },
-            __self: this
           }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", { role: "button", "aria-label": "Buscar", className: "searchBtn", type: "submit", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 25
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "form",
+            { action: "/items", role: "search", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              },
+              __self: this
             },
-            __self: this
-          })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", onChange: this.handleUserInput, value: this.state.query, name: "search", autoComplete: "off", placeholder: "Nunca dejes de buscar", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              },
+              __self: this
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", { role: "button", "aria-label": "Buscar", className: "searchBtn", type: "submit", __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
+              },
+              __self: this
+            })
+          )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 29
           },
           __self: this
         })

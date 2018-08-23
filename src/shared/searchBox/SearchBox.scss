@@ -4,33 +4,41 @@
   display: flex;
   flex-direction: row;
   background-color: $yellow;
-  padding: 10px;
+  padding: 10px 0 10px 0;
 
   div:first-child, div:last-child {
     flex-grow: 1;
-    max-width: 60px;
+    flex-basis: 0;
   }
 
-  img {
-    flex-grow: 1;
-    max-width: 53px;
-    margin-right: 10px;
-  }
-
-  form {
+  .logoSearchContainer {
+    flex-grow: 10;
+    flex-basis: 0;
     display: flex;
-    flex-grow: 9;
-    align-self: stretch;
+    flex-direction: row;
 
-    input {
+    img {
+      max-width: 53px;
+      margin-right: 10px;
+    }
+
+    form {
+      display: flex;
       flex-grow: 12;
-      border: none;
-      font-size: 18px;
-      padding: 0 5px 0 10px;
-      border-radius: 2px 0 0 2px;
+      flex-basis: 0;
+      align-self: stretch;
 
-      &:focus {
-        outline: none;
+      input {
+        flex-grow: 12;
+        flex-basis: 0;
+        border: none;
+        font-size: 18px;
+        padding: 0 5px 0 10px;
+        border-radius: 2px 0 0 2px;
+
+        &:focus {
+          outline: none;
+        }
       }
     }
   }

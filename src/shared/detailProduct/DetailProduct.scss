@@ -9,22 +9,25 @@
 
     > div:first-child, > div:last-child {
       flex-grow: 1;
-      max-width: 60px;
-      min-width: 60px;
+      flex-basis: 0;
     }
 
     .item {
       flex-grow: 10;
+      flex-basis: 0;
       background-color: white;
       border-radius: 5px;
 
       .itemDetail{
+        flex-grow: 12;
+        flex-basis: 0;
         display: flex;
         flex-direction: row;
 
         figure {
           margin: 0;
           flex-grow: 7;
+          flex-basis: 0;
           margin-right: 32px;
           display: flex;
 
@@ -41,6 +44,7 @@
         .itemInfo {
             margin-top: 32px;
             flex-grow: 5;
+            flex-basis: 0;
             display: flex;
             flex-direction: column;
 

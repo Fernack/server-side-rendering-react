@@ -19,11 +19,13 @@ class SearchBox extends Component {
     return (
       <div className="searchBox">
         <div></div>
-        <img src={Logo_ML}/>
-        <form action="/items" role="search">
-          <input type="text" onChange={this.handleUserInput} value={ this.state.query } name="search" autoComplete="off"  placeholder="Nunca dejes de buscar"/>
-          <button role="button" aria-label="Buscar" className="searchBtn" type="submit"></button>
-        </form>
+        <div className="logoSearchContainer">
+          <img src={Logo_ML}/>
+          <form action="/items" role="search">
+            <input type="text" onChange={this.handleUserInput} value={ this.state.query } name="search" autoComplete="off"  placeholder="Nunca dejes de buscar"/>
+            <button role="button" aria-label="Buscar" className="searchBtn" type="submit"></button>
+          </form>
+        </div>
         <div></div>
       </div>
     );
