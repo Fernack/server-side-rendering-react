@@ -1,0 +1,87 @@
+@import "../App.scss";
+
+.detailProduct {
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+
+    > div:first-child, > div:last-child {
+      flex-grow: 1;
+      max-width: 60px;
+      min-width: 60px;
+    }
+
+    .item {
+      flex-grow: 10;
+      background-color: white;
+      border-radius: 5px;
+
+      .itemDetail{
+        display: flex;
+        flex-direction: row;
+
+        figure {
+          margin: 0;
+          flex-grow: 7;
+          margin-right: 32px;
+          display: flex;
+
+          img {
+            flex-grow: 12;
+            max-width: 680px;
+            max-height: 680px;
+            margin-left: 32px;
+            margin-top: 32px;
+          }
+        }
+
+        .itemInfo {
+            margin-top: 32px;
+            flex-grow: 5;
+            display: flex;
+            flex-direction: column;
+
+            span {
+              font-size: 14px;
+            }
+
+            .title {
+              font-weight: 500;
+              font-size: 24px;
+              margin-top: 16px;
+            }
+
+            .price {
+                font-weight: 500;
+                margin: 32px 0 32px 0;
+                font-size: 48px;
+            }
+
+            button {
+              background-color: $blue;
+              border: none;
+              color: white;
+              height: 35px;
+
+              margin-right: 32px;
+              border-radius: 5px;
+            }
+        }
+      }
+
+      .descriptionItem {
+        margin: 32px;
+        h2 {
+          font-size: 28px;
+          font-weight: 500;
+          margin-bottom: 32px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

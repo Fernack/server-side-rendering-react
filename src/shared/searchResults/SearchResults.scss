@@ -1,0 +1,85 @@
+.searchResults {
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+
+    > div:first-child, > div:last-child {
+      flex-grow: 1;
+      max-width: 60px;
+    }
+
+    .list {
+      background-color: white;
+      border-radius: 5px;
+      flex-grow: 10;
+
+      .item {
+        list-style: none;
+        display: flex;
+
+        .itemImage {
+          figure {
+            margin: 0;
+            img {
+              width: 180px;
+              height: 180px;
+              border-radius: 4px;
+              margin: 16px;
+            }
+          }
+        }
+
+        .itemInfo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-content: center;
+
+          .itemPrice {
+            font-size: 24px;
+            align-self: flex-start;
+            img {
+              margin-left: 10px;
+            }
+          }
+
+          .itemTitle {
+            align-self: flex-start;
+            font-size: 18px;
+            margin: 32px 0 50px 0;
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+
+        }
+      }
+
+      .productsNotFound {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        p {
+            align-self: center;
+            font-size: 24px;
+        }
+
+        ul {
+            align-self: center;
+            margin-bottom: 30px;
+            margin-top: 0;
+
+            li {
+              margin-top: 10px;
+
+            }
+        }
+      }
+    }
+  }
+}

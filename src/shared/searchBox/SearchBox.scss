@@ -1,0 +1,54 @@
+@import "../App.scss";
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  background-color: $yellow;
+  padding: 10px;
+
+  div:first-child, div:last-child {
+    flex-grow: 1;
+    max-width: 60px;
+  }
+
+  img {
+    flex-grow: 1;
+    max-width: 53px;
+    margin-right: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-grow: 9;
+    align-self: stretch;
+
+    input {
+      flex-grow: 12;
+      border: none;
+      font-size: 18px;
+      padding: 0 5px 0 10px;
+      border-radius: 2px 0 0 2px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .searchBtn {
+    background-image: url("ic_Search.png");
+    background-color: $lightGray;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    background-position: center;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
