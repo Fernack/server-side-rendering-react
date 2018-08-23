@@ -26197,7 +26197,6 @@ var SearchResults = function (_Component) {
                       },
                       __self: _this2
                     },
-                    "$ ",
                     item.price.amount,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { hidden: !item.free_shipping, src: __WEBPACK_IMPORTED_MODULE_3__ic_shipping_png___default.a, __source: {
                         fileName: _jsxFileName,
@@ -26501,7 +26500,6 @@ var DetailProduct = function (_Component) {
                     },
                     __self: this
                   },
-                  "$ ",
                   product.item.price.amount
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

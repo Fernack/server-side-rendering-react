@@ -44,7 +44,7 @@ class DetailProduct extends Component {
               <div className="itemInfo">
                   <span>{product.item.condition === 'used' ? 'Usado' : 'Nuevo' } - {product.item.sold_quantity} vendidos </span>
                   <h2 className="title">{product.item.title}</h2>
-                  <h2 className="price">$ {product.item.price.amount}</h2>
+                  <h2 className="price">{product.item.price.amount}</h2>
                   <button role="button" aria-label="Comprar" className="buyBtn" type="submit">Comprar</button>
               </div>
             </div>

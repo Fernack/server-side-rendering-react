@@ -4,8 +4,7 @@
   "description": "Test práctico front-end Mercado Libre.",
   "main": "server.js",
   "scripts": {
-    "start-dev": "concurrently \"set NODE_ENV=development\" \"webpack -w\" \"nodemon server.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "concurrently \"set NODE_ENV=development\" \"webpack -w\" \"nodemon server.js\""
   },
   "keywords": [],
   "author": {
@@ -15,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.4",
+    "currency-formatter": "^1.4.3",
     "express": "^4.15.3",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.6.1",

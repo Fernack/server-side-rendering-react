@@ -1,6 +1,7 @@
 module.exports = {
   buildReponseItems: function(itemsJson) {
     var packageJson = require('../../package.json'),
+      currencyFormatter = require('currency-formatter'),
       parseItems = [];
 
     for (var i = 0; i < itemsJson.results.length; i++) {
@@ -9,7 +10,13 @@ module.exports = {
         title: itemsJson.results[i].title,
         price: {
           currency: itemsJson.results[i].currency_id,
-          amount: itemsJson.results[i].price,
+          amount: currencyFormatter.format(itemsJson.results[i].price, {
+            symbol: '$',
+            decimal: ',',
+            thousand: '.',
+            precision: 2,
+            format: ' %s %v'
+          }),
           decimals: 2
         },
         picture: itemsJson.results[i].thumbnail,
@@ -29,7 +36,8 @@ module.exports = {
   },
 
   buildReponseItemDetail : function(itemJson, descriptionJson){
-    var packageJson = require('../../package.json');
+    var packageJson = require('../../package.json'),
+      currencyFormatter = require('currency-formatter');
 
     return {
       author: {
@@ -41,7 +49,13 @@ module.exports = {
         title: itemJson.title,
         price: {
           currency: itemJson.currency_id,
-          amount: itemJson.price,
+          amount: currencyFormatter.format(itemJson.price, {
+            symbol: '$',
+            decimal: ',',
+            thousand: '.',
+            precision: 2,
+            format: ' %s %v'
+          }),
           decimals: 2
         },
         picture: itemJson.pictures ? itemJson.pictures[0].url : '',
@@ -50,6 +64,6 @@ module.exports = {
         sold_quantity: itemJson.sold_quantity,
         description: descriptionJson.plain_text
       }
-    }
+    };
   }
 };

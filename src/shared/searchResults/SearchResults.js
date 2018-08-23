@@ -50,7 +50,7 @@ class SearchResults extends Component {
                 </div>
                 <div className="itemInfo">
                     <div className="itemPrice">
-                        $ { item.price.amount }
+                        { item.price.amount }
                         <img hidden={!item.free_shipping} src={ic_shipping}/>
                     </div>
                     <span className="itemTitle">
