@@ -1,5 +1,5 @@
-# test-front-end-mercado-libre
-Test práctico front-end Mercado Libre.   
+# test-front-end
+Test práctico front-end. Server Side Rendering con React
 
 ## Stack tecnológico
 
