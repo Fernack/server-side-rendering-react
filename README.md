@@ -1,5 +1,4 @@
-# test-front-end
-Test práctico front-end. Server Side Rendering con React
+# Test práctico front-end. Server Side Rendering con React
 
 ## Stack tecnológico
 
