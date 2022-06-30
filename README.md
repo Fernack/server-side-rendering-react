@@ -1,27 +1,25 @@
-# Test práctico front-end. Server Side Rendering con React
+# Server Side Rendering - React
 
-## Stack tecnológico
+## Stack
 
-### Cliente:
+### Client:
 * HTML
 * React
 * Sass
 
-### Servidor:
+### Server:
 * Node >= 6
 * Express
 
-## Consideraciones 
-* Usabilidad 
+## Considerations: 
+* Usability 
 * SEO 
 * Performance 
-* Escalabilidad
+* Scalability
 
-## Comentarios generales
-> La idea del proyecto fue mantener el stack tecnológico requerido, es decir intentar no utilizar mas frameworks de los nombrados. Por lo que el uso de Redux, Nextjs,
-frameworks de presentación (Bootstrap, etc), entre otros, no fueron tomados en cuenta.
-Se utilizó HTML y Sass puros, implementando Flexbox. Por otro lado el renderizado en el servidor era esencial para poder lograr SEO y Performance. 
+## General comments
+> The idea of the project was to maintain the required technological stack, not to use more frameworks than the ones mentioned above. So the use of Redux, Nextjs, presentation frameworks (Bootstrap, etc), among others, were not taken into account.
+Pure HTML and Sass were used, implementing Flexbox. On the other hand, server-side rendering was essential to achieve SEO and performance. 
 
-## Pendientes
-> No pude resolver las categorías de los productos. Entiendo que me falta algun endpoint para poder serializar esa información. De todos modos realice un componente Categories 
-que dado un array de categorías, el mismo las parsea y presenta la información en el front-end.
+## Remaining tasks
+> I could not resolve the product categories. I understand that I'm missing some endpoint to serialize that information. Anyway, I made a Categories component that, given an array of categories, parses them and presents the information in the front-end.
